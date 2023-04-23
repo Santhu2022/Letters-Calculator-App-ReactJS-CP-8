@@ -1,0 +1,110 @@
+.main-bg-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  padding: 15px;
+  /* border: 1px solid black; */
+}
+@media screen and (min-width: 768px) {
+  .app-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.image-container {
+  padding: 20px;
+  /* border: 1px solid black; */
+  
+}
+.image {
+  width: 350px;
+}
+@media screen and (min-width: 768px){
+    .image{
+        width: 500px;
+    }
+    .image-container{
+        order: 1;
+        max-width: 500px;
+    }
+}
+.function-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+
+}
+@media screen and (min-width: 768px){
+    .function-container{
+        align-items: flex-start;
+    }
+}
+.heading {
+  text-align: center;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 28px;
+}
+@media screen and (min-width: 768px){
+    .heading{
+        text-align: left;
+        font-size: 40px;
+    }
+}
+.input-container {
+  /* border: 1px solid black; */
+  width: 80%;
+  
+}
+.label-text {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+.input-box {
+  color: #ffffff;
+  font-family: 'Roboto';
+  border: 1px solid #e4e7eb;
+  border-radius: 6px;
+  background-color: transparent;
+  padding-left: 10px;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px){
+    .input-box{
+        height: 38px;
+        font-size: 16px;
+    }
+}
+.count-container{
+    background-color: #ffffff;
+    height: 60px;
+    width: 80%;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.count-text{
+    color: #219a6f;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
